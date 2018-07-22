@@ -1,0 +1,836 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Control API · Virbox LM</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="userlogin-api.html" />
+    
+    
+    <link rel="prev" href="runtime-api.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Virbox 开发者文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="../Virbox.html">
+            
+                <a href="../Virbox.html">
+            
+                    
+                    产品简介
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="../Virbox/yun.html">
+            
+                <a href="../Virbox/yun.html">
+            
+                    
+                    什么是云许可
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="../Virbox/ruan.html">
+            
+                <a href="../Virbox/ruan.html">
+            
+                    
+                    什么是软许可
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="../Virbox/sdk.html">
+            
+                <a href="../Virbox/sdk.html">
+            
+                    
+                    开发者SDK简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="../Virbox/language.html">
+            
+                <a href="../Virbox/language.html">
+            
+                    
+                    支持开发语言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../Virbox/si-zhong-xu-ke-jian-jie.html">
+            
+                <a href="../Virbox/si-zhong-xu-ke-jian-jie.html">
+            
+                    
+                    四种许可简介
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../virboxtools.html">
+            
+                <a href="../virboxtools.html">
+            
+                    
+                    Virbox 工具
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../virboxtools/virboxuser.html">
+            
+                <a href="../virboxtools/virboxuser.html">
+            
+                    
+                    Virbox 用户工具
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../virboxtools/virbox-protector.html">
+            
+                <a href="../virboxtools/virbox-protector.html">
+            
+                    
+                    Virbox Protector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../virboxtools/ds-protector.html">
+            
+                <a href="../virboxtools/ds-protector.html">
+            
+                    
+                    DS Protector
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../virboxtools/virbox-kai-fa-zhe-gong-ju-he.html">
+            
+                <a href="../virboxtools/virbox-kai-fa-zhe-gong-ju-he.html">
+            
+                    
+                    Virbox 开发者工具盒
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../yuan-ma-jia-mi-liu-cheng.html">
+            
+                <a href="../yuan-ma-jia-mi-liu-cheng.html">
+            
+                    
+                    源码加密流程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.4.1" data-path="../yuan-ma-jia-mi-liu-cheng/ccjia-mi-liu-cheng.html">
+            
+                <a href="../yuan-ma-jia-mi-liu-cheng/ccjia-mi-liu-cheng.html">
+            
+                    
+                    C/C++ 加密流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.2" data-path="../yuan-ma-jia-mi-liu-cheng/c-jia-mi-liu-cheng.html">
+            
+                <a href="../yuan-ma-jia-mi-liu-cheng/c-jia-mi-liu-cheng.html">
+            
+                    
+                    C# 加密流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.3" data-path="../yuan-ma-jia-mi-liu-cheng/unity3d-jia-mi-liu-cheng.html">
+            
+                <a href="../yuan-ma-jia-mi-liu-cheng/unity3d-jia-mi-liu-cheng.html">
+            
+                    
+                    Unity3D 加密流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.4" data-path="../yuan-ma-jia-mi-liu-cheng/ue4-jia-mi-liu-cheng.html">
+            
+                <a href="../yuan-ma-jia-mi-liu-cheng/ue4-jia-mi-liu-cheng.html">
+            
+                    
+                    UE4 加密流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.5" data-path="../yuan-ma-jia-mi-liu-cheng/python-jia-mi-liu-cheng.html">
+            
+                <a href="../yuan-ma-jia-mi-liu-cheng/python-jia-mi-liu-cheng.html">
+            
+                    
+                    Python 加密流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4.6" data-path="../yuan-ma-jia-mi-liu-cheng/java-jia-mi-liu-cheng.html">
+            
+                <a href="../yuan-ma-jia-mi-liu-cheng/java-jia-mi-liu-cheng.html">
+            
+                    
+                    Java 加密流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="../zi-yuan-wen-jian-jia-mi-liu-cheng.html">
+            
+                <a href="../zi-yuan-wen-jian-jia-mi-liu-cheng.html">
+            
+                    
+                    资源文件加密流程
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.5.1" data-path="../zi-yuan-wen-jian-jia-mi-liu-cheng/shi-pin-jia-mi-liu-cheng.html">
+            
+                <a href="../zi-yuan-wen-jian-jia-mi-liu-cheng/shi-pin-jia-mi-liu-cheng.html">
+            
+                    
+                    视频加密流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.2" data-path="../zi-yuan-wen-jian-jia-mi-liu-cheng/pptjia-mi-liu-cheng.html">
+            
+                <a href="../zi-yuan-wen-jian-jia-mi-liu-cheng/pptjia-mi-liu-cheng.html">
+            
+                    
+                    PPT 加密流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5.3" data-path="../zi-yuan-wen-jian-jia-mi-liu-cheng/pdf-jia-mi-liu-cheng.html">
+            
+                <a href="../zi-yuan-wen-jian-jia-mi-liu-cheng/pdf-jia-mi-liu-cheng.html">
+            
+                    
+                    PDF 加密流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="../xu-ke-liu-cheng.html">
+            
+                <a href="../xu-ke-liu-cheng.html">
+            
+                    
+                    许可流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="../ruan-jian-yong-hu-shi-yong-liu-cheng.html">
+            
+                <a href="../ruan-jian-yong-hu-shi-yong-liu-cheng.html">
+            
+                    
+                    软件用户使用流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="../apixiang-guan.html">
+            
+                <a href="../apixiang-guan.html">
+            
+                    
+                    API相关
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.8.1" data-path="open-api.html">
+            
+                <a href="open-api.html">
+            
+                    
+                    Open API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.2" data-path="runtime-api.html">
+            
+                <a href="runtime-api.html">
+            
+                    
+                    Runtime API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.8.3" data-path="control-api.html">
+            
+                <a href="control-api.html">
+            
+                    
+                    Control API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.4" data-path="userlogin-api.html">
+            
+                <a href="userlogin-api.html">
+            
+                    
+                    ss_user_login API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8.5" data-path="update-api.html">
+            
+                <a href="update-api.html">
+            
+                    
+                    Update API
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="../xiang-guan-xia-zai.html">
+            
+                <a href="../xiang-guan-xia-zai.html">
+            
+                    
+                    相关下载
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.10" data-path="../geng-xin-ri-zhi.html">
+            
+                <a href="../geng-xin-ri-zhi.html">
+            
+                    
+                    更新日志
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.10.1" data-path="../geng-xin-ri-zhi/virbox-protector-geng-xin-ri-zhi.html">
+            
+                <a href="../geng-xin-ri-zhi/virbox-protector-geng-xin-ri-zhi.html">
+            
+                    
+                    Virbox Protector 更新日志
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Control API</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="control-api">Control API</h1>
+<p>&#x6DF1;&#x601D;&#x8BB8;&#x53EF;&#x7684;&#x7BA1;&#x7406;&#x63A5;&#x53E3;&#xFF0C;&#x7B80;&#x79F0; ControlAPI &#x3002;&#x4E3B;&#x8981;&#x63D0;&#x4F9B;&#x52A0;&#x5BC6;&#x9501;&#x4FE1;&#x606F;&#x7684;&#x67E5;&#x8BE2;&#x3001;&#x8BB8;&#x53EF;&#x5185;&#x5BB9;&#x548C;&#x72B6;&#x6001;&#x7684;&#x67E5;&#x8BE2;&#x3001;&#x8BB8;&#x53EF;&#x4F1A;&#x8BDD;&#x7684;&#x67E5;&#x8BE2;&#x7B49;&#x529F;&#x80FD;&#x3002;</p>
+<p>&#x6587;&#x4EF6;&#x540D; &#x4F5C;&#x7528; &#x8BF4;&#x660E;</p>
+<p>ss_lm_control.h ControlAPI &#x5934;&#x6587;&#x4EF6; &#x6BCF;&#x4E2A;&#x63A5;&#x53E3;&#x51FD;&#x6570;&#x63CF;&#x8FF0;</p>
+<p>slm_control_api.lib ControlAPI &#x7684;&#x9759;&#x6001;&#x5E93; &#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;</p>
+<p>slm_control.dll ControlAPI &#x7684;&#x52A8;&#x6001;&#x5E93; &#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">&#x6587;&#x4EF6;&#x540D;</th>
+<th style="text-align:left">&#x4F5C;&#x7528;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">ss_lm_control.h</td>
+<td style="text-align:left">ControlAPI &#x5934;&#x6587;&#x4EF6;</td>
+<td style="text-align:left">&#x6BCF;&#x4E2A;&#x63A5;&#x53E3;&#x51FD;&#x6570;&#x63CF;&#x8FF0;</td>
+</tr>
+<tr>
+<td style="text-align:left">slm_control_api.lib</td>
+<td style="text-align:left">ControlAPI &#x7684;&#x9759;&#x6001;&#x5E93;</td>
+<td style="text-align:left">&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;</td>
+</tr>
+<tr>
+<td style="text-align:left">slm_control.dll</td>
+<td style="text-align:left">ControlAPI &#x7684;&#x52A8;&#x6001;&#x5E93;</td>
+<td style="text-align:left">&#x63A5;&#x53E3;&#x7684;&#x5B9E;&#x73B0;</td>
+</tr>
+</tbody>
+</table>
+<p>&#x4E0B;&#x9762;&#x662F;&#x4E00;&#x6BB5; C &#x8BED;&#x8A00;&#x8C03;&#x7528; ControlAPI &#x7684;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code class="lang-c"><span class="hljs-comment">//  &#x672C;&#x793A;&#x4F8B;&#x7B80;&#x5355;&#x5C55;&#x793A;&#x5982;&#x4F55;&#x83B7;&#x53D6;&#x52A0;&#x5BC6;&#x9501;&#x5185;&#x8BB8;&#x53EF;&#x4FE1;&#x606F;</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-meta-string">&lt;stdio.h&gt;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;json/json.h&quot;</span> //  &#x793A;&#x4F8B;&#x4E2D;&#x91C7;&#x7528; jsoncpp &#x89E3;&#x6790; json &#x7ED3;&#x6784;</span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;ss_error.h&quot;</span></span>
+<span class="hljs-meta">#<span class="hljs-meta-keyword">include</span> <span class="hljs-string">&quot;ss_lm_control.h&quot;</span></span>
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">int</span> argc, <span class="hljs-keyword">char</span> **argv)</span>
+</span>{
+SS_UINT32 buf_size = <span class="hljs-number">0</span>;
+SS_UINT32 ret = <span class="hljs-number">0</span>;
+<span class="hljs-keyword">void</span> *ipc = <span class="hljs-literal">NULL</span>;
+<span class="hljs-keyword">char</span> *dev_desc = <span class="hljs-literal">NULL</span>;
+Json::Reader reader;
+Json::Value root;
+Json::Value desc;
+ret = slm_client_open(&amp;ipc);
+<span class="hljs-keyword">if</span> (ret != SS_OK)
+{
+<span class="hljs-keyword">return</span> <span class="hljs-number">-1</span>;
+}
+<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;slm_client_open ok\n&quot;</span>);
+ret = slm_get_all_description(ipc, JSON, &amp;dev_desc);
+<span class="hljs-keyword">if</span> (ret != SS_OK)
+{
+<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;slm_get_all_description failed,errorcode=0x%08x&quot;</span>,ret);
+}
+<span class="hljs-keyword">else</span>
+{
+<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;slm_get_all_description ok\n&quot;</span>);
+<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;begin prase all lock\n&quot;</span>);
+<span class="hljs-keyword">if</span> (!reader.parse(dev_desc, root))
+{
+<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;parse error \n&quot;</span>);
+}
+<span class="hljs-keyword">else</span>
+{
+<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;parse ok \n&quot;</span>);
+}
+}
+<span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> dev_type;
+<span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> host_name;
+<span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> ip;
+<span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> sn;
+<span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> devp_id;
+<span class="hljs-built_in">std</span>::<span class="hljs-built_in">string</span> print_str;
+<span class="hljs-keyword">int</span> dev_num = root.size(); <span class="hljs-comment">//  &#x8BBE;&#x5907;&#x6570;&#x91CF;</span>
+<span class="hljs-keyword">for</span> (<span class="hljs-keyword">int</span> i = <span class="hljs-number">0</span>; i &lt; dev_num; ++i)
+{
+desc = root[i];
+<span class="hljs-keyword">if</span>(desc != <span class="hljs-literal">NULL</span>)
+{
+<span class="hljs-keyword">char</span> *lic_context = <span class="hljs-literal">NULL</span>;
+print_str = <span class="hljs-string">&quot;\nbegin to read license \n&quot;</span>;
+<span class="hljs-keyword">if</span> (!desc[<span class="hljs-string">&quot;host_name&quot;</span>].isNull())
+{
+host_name = desc[<span class="hljs-string">&quot;host_name&quot;</span>].asString();
+print_str += <span class="hljs-string">&quot;[host_name:&quot;</span> + host_name + <span class="hljs-string">&quot;] &quot;</span>;
+}
+<span class="hljs-keyword">if</span> (!desc[<span class="hljs-string">&quot;ip&quot;</span>].isNull())
+{
+ip = desc[<span class="hljs-string">&quot;ip&quot;</span>].asString();
+print_str += <span class="hljs-string">&quot;[ip:&quot;</span> + ip + <span class="hljs-string">&quot;] &quot;</span>;
+}
+<span class="hljs-keyword">if</span> (!desc[<span class="hljs-string">&quot;type&quot;</span>].isNull())
+{
+dev_type = desc[<span class="hljs-string">&quot;type&quot;</span>].asString();
+print_str += <span class="hljs-string">&quot;[type:&quot;</span> + dev_type + <span class="hljs-string">&quot;] &quot;</span>;
+}
+<span class="hljs-keyword">if</span> (!desc[<span class="hljs-string">&quot;sn&quot;</span>].isNull())
+{
+sn = desc[<span class="hljs-string">&quot;sn&quot;</span>].asString();
+print_str += <span class="hljs-string">&quot;[sn:&quot;</span> + sn + <span class="hljs-string">&quot;] &quot;</span>;
+}
+<span class="hljs-keyword">if</span> (!desc[<span class="hljs-string">&quot;developer_id&quot;</span>].isNull())
+{
+devp_id = desc[<span class="hljs-string">&quot;developer_id&quot;</span>].asString();
+print_str += <span class="hljs-string">&quot;[devp_id:&quot;</span> + devp_id + <span class="hljs-string">&quot;] &quot;</span>;
+}
+print_str += <span class="hljs-string">&quot;\n&quot;</span>;
+<span class="hljs-built_in">printf</span>(print_str.c_str());
+ret = slm_read_brief_license_context(ipc, JSON, desc.toStyledString().c_str(), &amp;lic_context);
+<span class="hljs-keyword">if</span>(ret == SS_OK &amp;&amp; lic_context != <span class="hljs-literal">NULL</span>)
+{
+<span class="hljs-built_in">printf</span>(lic_context);
+<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;\n&quot;</span>);
+slm_free(lic_context);
+lic_context = <span class="hljs-literal">NULL</span>;
+<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;slm_read_brief_license_context ok\n&quot;</span>);
+}
+<span class="hljs-keyword">else</span>
+{
+<span class="hljs-built_in">printf</span>(<span class="hljs-string">&quot;slm_read_brief_license_context failed, [sn=%s] \n[errorcode=0x%08x]&quot;</span>, sn.c_str(), ret);
+}
+}
+}
+slm_client_close(ipc);
+<span class="hljs-keyword">return</span> <span class="hljs-number">0</span>;
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="runtime-api.html" class="navigation navigation-prev " aria-label="Previous page: Runtime API">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="userlogin-api.html" class="navigation navigation-next " aria-label="Next page: ss_user_login API">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Control API","level":"1.8.3","depth":2,"next":{"title":"ss_user_login API","level":"1.8.4","depth":2,"path":"apixiang-guan/userlogin-api.md","ref":"apixiang-guan/userlogin-api.md","articles":[]},"previous":{"title":"Runtime API","level":"1.8.2","depth":2,"path":"apixiang-guan/runtime-api.md","ref":"apixiang-guan/runtime-api.md","articles":[]},"dir":"ltr"},"config":{"plugins":["expandable-chapters","livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"isRewritePageTitle":true,"isShowTocTitleIcon":true,"tocLevel1Icon":"fa fa-hand-o-right","tocLevel2Icon":"fa fa-hand-o-right","tocLevel3Icon":"fa fa-hand-o-right"},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"expandable-chapters":{}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Virbox LM","language":"zh-hans","gitbook":"*"},"file":{"path":"apixiang-guan/control-api.md","mtime":"2018-07-20T03:21:16.164Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-07-21T11:19:09.460Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters/expandable-chapters.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
