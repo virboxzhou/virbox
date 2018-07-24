@@ -16,19 +16,17 @@ Java 开发语言以其安全性高、代码优化、跨平台等特性，迅速
 
 项目放在 webapps 目录下,先启动 tomcat 服务确认能正常启动，启动过后该 War 包会自动解压出一个同名的文件夹
 
-![](/assets/java_put.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/java_put.png)
 
 ### 启动 tomcat 服务
 
-![](/assets/java_start_tomcat.png)
-
-### 
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/java_start_tomcat.png)
 
 ### 找到依赖的 java.exe
 
 服务启动成功后,进入任务管理器-服务-找到目前运行项目所依赖的 jdk , 进入目录找到对应程序 进行加密. 如下图
 
-![](/assets/java_protect_exer.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/java_protect_exer.png)
 
 ## 使用 Virbox Protector 加壳工具
 
@@ -38,9 +36,9 @@ Java 开发语言以其安全性高、代码优化、跨平台等特性，迅速
 
 注：使用加壳工具的前提是点击“下载” SDK，并安装。
 
-![](/assets/import100.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import100.png)
 
-![](/assets/import102.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import102.png)
 
 加壳工具目前支持对可执行 exe 和 dll 加壳，支持的开发语言以及开发框架：
 
@@ -50,9 +48,9 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX插件、Revit\(插件\)、Unity3D�
 
 将找到依赖的 java.exe 步骤中的 java.exe 添加到加壳工具中 , 如下图所示。
 
-![](/assets/java_virbox_exe1.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/java_virbox_exe1.png)
 
-![](/assets/java_virbox_exe2.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/java_virbox_exe2.png)
 
 **登录云锁**：
 
@@ -60,9 +58,9 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX插件、Revit\(插件\)、Unity3D�
 
 **许可形式：**
 
-勾选相应许可形式![](/assets/import104.png)
+勾选相应许可形式![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import104.png)
 
-此处勾选的许可形式需要与发布给用户的许可类型一致，[四种许可类型简介](/Virbox/si-zhong-xu-ke-jian-jie.md)
+此处勾选的许可形式需要与发布给用户的许可类型一致，[四种许可类型简介](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/Virbox/si-zhong-xu-ke-jian-jie.md)
 
 **许可 ID：**
 
@@ -72,7 +70,7 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX插件、Revit\(插件\)、Unity3D�
 
 **API密码：**
 
-进入 Virbox LM 开发者平台，页面顶部点击“查看”，将API密码输入至此![](/assets/import107.png)
+进入 Virbox LM 开发者平台，页面顶部点击“查看”，将API密码输入至此![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import107.png)
 
 **锁序列号：**
 
@@ -98,29 +96,29 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX插件、Revit\(插件\)、Unity3D�
 
 **插件**：主要用于对 class 资源进行加密，请务必打开.密码可随意设置或者使用默认。
 
-![](/assets/java_protect_select.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/java_protect_select.png)
 
 **消息选项**
 
 设置许可失效时的提示形式、设置提示标题、软件剩余时间、剩余次数以及其他提示消息
 
-![](/assets/java_protect_new.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/java_protect_new.png)
 
 **软件加壳**
 
 设置好相应的选项后，点击加壳按钮，对软件进行加壳保护
 
-![](/assets/java_virbox_jiake.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/java_virbox_jiake.png)
 
 提示：点击运行加密时如果出现如下问题，请先把 java.exe 拷贝到其它盘符再加密。然后再拷贝到jdk目录下。
 
-![](/assets/java_noright.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/java_noright.png)
 
-加密成功后会生成两个文件 java.exe.ssp、java.ssp.exe ，把原来的 java.exe 剪切备份，把 java.ssp.exe 修改成 java.exe 文件。     （ java.ssp.exe 是加密的）如下图。
+加密成功后会生成两个文件 java.exe.ssp、java.ssp.exe ，把原来的 java.exe 剪切备份，把 java.ssp.exe 修改成 java.exe 文件。 （ java.ssp.exe 是加密的）如下图。
 
 ## 加密后文件
 
-![](/assets/javaexe_aftprot.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/javaexe_aftprot.png)
 
 ① java.exe 加壳前的软件原文件
 
@@ -132,23 +130,23 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX插件、Revit\(插件\)、Unity3D�
 
 ### 打开 DSProtector.exe对 .class、.jar 或者 .xml 资源进行加密
 
-![](/assets/xiazaiqiopends.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/xiazaiqiopends.png)
 
 ### 添加 java.exe.ssp
 
 点击浏览添加 java.exe.ssp 文件。
 
-![](/assets/java_ssp_pro.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/java_ssp_pro.png)
 
 ### 4.5.3 添加需要保护的资源
 
-在 tomcat webapps  目录下 找到项目添加要保护的 .class 、.jar 或者 .xml 进行加密. 点“保护它”,即可完成加密，支持多选。
+在 tomcat webapps 目录下 找到项目添加要保护的 .class 、.jar 或者 .xml 进行加密. 点“保护它”,即可完成加密，支持多选。
 
-![](/assets/java_class_pro.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/java_class_pro.png)
 
 如果点“保护它” 出现了如下错误,只需把要要加密的 class 拷贝到其它盘符再重新添加资源 并保护它,把生成的文件再次拷贝到原 class 目录下。
 
-![](/assets/java_pro_mistake.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/java_pro_mistake.png)
 
-至此使用加壳工具加密的过程已经完成，下一步根据不同用户使用的不同需求创建授权模板，比如控制此 java 程序用户可以使用多长时间，详见[发布许可流程（授权）](/xu-ke-liu-cheng.md)。
+至此使用加壳工具加密的过程已经完成，下一步根据不同用户使用的不同需求创建授权模板，比如控制此 java 程序用户可以使用多长时间，详见[发布许可流程（授权）](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/xu-ke-liu-cheng.md)。
 

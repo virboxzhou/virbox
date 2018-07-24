@@ -1,10 +1,10 @@
 # Python 加密流程
 
-### 背景：
+## 背景：
 
 目前软件开发商对 Python 加密时可能会有两种形式，一种是对 python 转成的 exe 进行保护，另一种是直接对 .pyc 文件进行保护，下面将列举两种形式的保护流程。
 
-### 使用 Virbox Protector 加壳工具
+## 使用 Virbox Protector 加壳工具
 
 Virbox Protector 是北京深思数盾自主研发的加壳工具，对于 Python 的保护方式主要是对 Python 转成的 exe 和 .pyc 进行加密保护
 
@@ -12,19 +12,19 @@ Virbox Protector 是北京深思数盾自主研发的加壳工具，对于 Pytho
 
 注：使用加壳工具的前提是点击“下载” SDK，并安装
 
-![](/assets/import100.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import100.png)
 
 加壳工具目前支持对可执行 exe 和 dll 加壳，支持的开发语言以及开发框架：
 
 C、C++、.Net、VB6.0、Deliph、Java、ARX插件、Revit\(插件\)、Unity3D、UE4、PHP、Labview、Mathlib、Python、Lua、VF、go、Perl、Revit软件中所有格式得资源文件、视频、音频PPT、游戏资源
 
-### **对Python转exe加壳**
+## **对Python转exe加壳**
 
 将 demo.exe 拖入到加壳工具中，然后设置加壳工具。
 
-![](/assets/import102.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import102.png)
 
-### 设置加壳工具
+## 设置加壳工具
 
 **登录云锁**：
 
@@ -32,9 +32,9 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX插件、Revit\(插件\)、Unity3D�
 
 **许可形式：**
 
-勾选相应许可形式![](/assets/import104.png)
+勾选相应许可形式![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import104.png)
 
-此处勾选的许可形式需要与发布给用户的许可类型一致，[四种许可类型简介](/Virbox/si-zhong-xu-ke-jian-jie.md)
+此处勾选的许可形式需要与发布给用户的许可类型一致，[四种许可类型简介](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/Virbox/si-zhong-xu-ke-jian-jie.md)
 
 **许可 ID：**
 
@@ -44,7 +44,7 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX插件、Revit\(插件\)、Unity3D�
 
 **API密码：**
 
-进入 Virbox LM 开发者平台，页面顶部点击“查看”，将API密码输入至此![](/assets/import107.png)
+进入 Virbox LM 开发者平台，页面顶部点击“查看”，将API密码输入至此![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import107.png)
 
 **锁序列号：**
 
@@ -54,7 +54,7 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX插件、Revit\(插件\)、Unity3D�
 
 点击“+”按钮：图对加壳前的软件进行预分析，建议对比较重要的函数选择碎片代码的保护方式，开发者需要在软件性能与安全之间平衡，如果对调用次数过多的函数选择碎片化保护，可能会影响软件的运行速率，调用次数过多的函数建议使用不保护的方式。
 
-![](/assets/import108.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import108.png)
 
 **加密选项：**
 
@@ -74,27 +74,27 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX插件、Revit\(插件\)、Unity3D�
 
 插件：加壳无需设置插件功能
 
-![](/assets/pythontuozhan01.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/pythontuozhan01.png)
 
 **消息选项：**
 
 设置许可失效时提示的形式、设置提示标题、软件剩余时间、剩余次数以及其他提示消息
 
-![](/assets/import113.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import113.png)
 
-### **软件加壳：**
+## **软件加壳：**
 
 设置好相应的选项后，点击加壳按钮，对软件进行加壳保护
 
-![](/assets/import116.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import116.png)
 
-### 加密后文件
+## 加密后文件
 
 加密前的软件
 
-![](/assets/pythonprot01.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/pythonprot01.png)
 
-加密后的软件![](/assets/pythonprot02.png)
+加密后的软件![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/pythonprot02.png)
 
 ①加壳前的软件原文件 xxx.exe，将此文件剪切备份至其他文件夹
 
@@ -102,15 +102,15 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX插件、Revit\(插件\)、Unity3D�
 
 ③加壳后的软件 xxx.ssp.exe，建议将加壳后的软件名称修改为原文件名称。
 
-### **对 .pyc 加密**
+## **对 .pyc 加密**
 
-### 首先对安装 Python 路径下的 python.exe 进行加密
+## 首先对安装 Python 路径下的 python.exe 进行加密
 
 使用加壳工具对 Python 安装目录下的 python.exe 进行加壳，将 python.exe 拖入到加壳工具 Virbox Protector 中
 
-![](/assets/pythonexepro01.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/pythonexepro01.png)
 
-![](/assets/pythonexevirbox.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/pythonexevirbox.png)
 
 **登录云锁**：
 
@@ -118,7 +118,7 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX插件、Revit\(插件\)、Unity3D�
 
 **许可形式：**
 
-勾选相应许可形式![](/assets/import104.png)
+勾选相应许可形式![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import104.png)
 
 此处勾选的许可形式需要与发布给用户的许可类型一致，四种许可类型简介（加入链接）
 
@@ -130,7 +130,7 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX插件、Revit\(插件\)、Unity3D�
 
 **API密码：**
 
-进入 Virbox LM 开发者平台，页面顶部点击“查看”，将API密码输入至此![](/assets/import107.png)
+进入 Virbox LM 开发者平台，页面顶部点击“查看”，将API密码输入至此![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import107.png)
 
 **锁序列号：**
 
@@ -140,37 +140,37 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX插件、Revit\(插件\)、Unity3D�
 
 **“加密选项”：**“设置选项”无需勾选任何选框，将“插件”中ds功能打开，输入密码即可。
 
-![](/assets/pythonproselect.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/pythonproselect.png)
 
 **“消息选项”：**设置许可失效时的提示形式、设置提示标题、软件剩余时间、剩余次数以及其他提示消息
 
-![](/assets/pythonpronew.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/pythonpronew.png)
 
 点击“立即加壳”，加壳后会额外生成图示两个文件
 
-![](/assets/pythonexepro02.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/pythonexepro02.png)
 
 python.exe.ssp 是配置文件，在后面对 .py/.pyc 加密时会用到
 
-python.ssp.exe 是加壳后的 python.exe 文件，将 python.exe  剪切到其他文件夹备份，python.ssp.exe 名字改为 python.exe 即可。
+python.ssp.exe 是加壳后的 python.exe 文件，将 python.exe 剪切到其他文件夹备份，python.ssp.exe 名字改为 python.exe 即可。
 
-### 对.pyc进行加密
+## 对.pyc进行加密
 
 在开发者工具盒打开 DSprotector 使用 DS Protector 对 .pyc 进行保护
 
-![](/assets/xiazaiqiopends.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/xiazaiqiopends.png)
 
 添加上一步加密 python.exe 生成的 python.exe.ssp 文件
 
-![](/assets/ds_select_ssp.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/ds_select_ssp.png)
 
 ②添加要加密的 .pyc
 
-![](/assets/python_pyc_protector.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/python_pyc_protector.png)
 
 ③点击“保护它”，加密成功
 
-![](/assets/python_pyc_sucess.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/python_pyc_sucess.png)
 
-至此，Python 转 exe 或者 .pyc 文件已经加密成功，下一步需要将许可授权给软件用户，这样用户才可以使用加密后的软件。详见[发布许可流程（授权）](/xu-ke-liu-cheng.md)
+至此，Python 转 exe 或者 .pyc 文件已经加密成功，下一步需要将许可授权给软件用户，这样用户才可以使用加密后的软件。详见[发布许可流程（授权）](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/xu-ke-liu-cheng.md)
 

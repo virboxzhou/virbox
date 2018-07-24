@@ -1,4 +1,4 @@
-# 用户使用加密后的软件
+# 软件用户使用流程
 
 ## 运行 Virbox 用户工具
 
@@ -10,13 +10,13 @@
 
 ② 登录用户账号
 
-![](/assets/user0001.png)
+![](https://github.com/virboxzhou/virbox/tree/c4c1599dd0d8f26b9518be7aa29fe7d81d0268bf/assets/user0001.png)
 
 ③点击登录的账号查看账号内是否存在此条许可
 
-![](/assets/user002.png)
+![](https://github.com/virboxzhou/virbox/tree/c4c1599dd0d8f26b9518be7aa29fe7d81d0268bf/assets/user002.png)
 
-![](/assets/user003.png)
+![](https://github.com/virboxzhou/virbox/tree/c4c1599dd0d8f26b9518be7aa29fe7d81d0268bf/assets/user003.png)
 
 ## 运行成功或错误提示
 

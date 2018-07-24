@@ -117,7 +117,3 @@ slm_client_close(ipc);
 return 0;
 ```
 
-
-
-
-

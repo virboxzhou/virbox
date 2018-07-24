@@ -6,21 +6,21 @@ Virbox Protector 是北京深思数盾自主研发的加壳工具，对于 UE4 �
 
 从 Virbox 开发者工具盒打开加壳工具，将待加密软件拖入到加壳工具中
 
-![](/assets/import100.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import100.png)
 
 加壳工具目前支持对可执行 exe 和 dll 加壳，支持的开发语言以及开发框架：
 
 C、C++、.Net、VB6.0、Deliph、Java、ARX 插件、Revi t\(插件\)、Unity3D、UE4、PHP、Labview、Mathlib、Python、Lua、VF、go、Perl、Revit软件中所有格式得资源文件、视频、音频 PPT、游戏资源
 
-![](/assets/import102.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import102.png)
 
 本示例主要以 UE4 项目中发行模式下的 xxx.exe 进行加密保护，UE4项目结构图如下：
 
-![](/assets/importUE4mulu.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/importUE4mulu.png)
 
 将 xxx.exe 拖入到加壳工具中，然后设置加壳工具。
 
-![](/assets/importUE4.exeprot.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/importUE4.exeprot.png)
 
 设置加壳工具
 
@@ -28,9 +28,9 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX 插件、Revi t\(插件\)、Unity3D
 
 即登录 Virbox LM 平台开发者账号
 
-**许可形式： **
+**许可形式：** 
 
-勾选相应许可形式![](/assets/import104.png)
+勾选相应许可形式![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import104.png)
 
 此处勾选的许可形式需要与发布给用户的许可类型一致
 
@@ -42,7 +42,7 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX 插件、Revi t\(插件\)、Unity3D
 
 **API密码：**
 
-进入Virbox LM 开发者平台，页面顶部点击“查看”，将API密码输入至此![](/assets/import107.png)
+进入Virbox LM 开发者平台，页面顶部点击“查看”，将API密码输入至此![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/import107.png)
 
 **锁序列号：**
 
@@ -70,15 +70,15 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX 插件、Revi t\(插件\)、Unity3D
 
 设置好相应的选项后，点击加壳按钮，对软件进行加壳保护
 
-### 加密后文件
+## 加密后文件
 
 加密前的软件
 
-![](/assets/importprote01UE4exe.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/importprote01UE4exe.png)
 
 加密后的软件
 
-![](/assets/importprot02UE4exe.png)
+![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/importprot02UE4exe.png)
 
 ①加壳前的软件原文件xxx.exe，将此文件剪切备份至其他文件夹
 
@@ -86,5 +86,5 @@ C、C++、.Net、VB6.0、Deliph、Java、ARX 插件、Revi t\(插件\)、Unity3D
 
 ③加壳后的软件 xxx.ssp.exe，建议将加壳后的软件名称修改为原文件名称。
 
-至此使用加壳工具加密的过程已经完成，下一步根据不同用户的不同需求发布不同的许可内容到用户的账号中,详见[发布许可流程（授权）](/xu-ke-liu-cheng.md)
+至此使用加壳工具加密的过程已经完成，下一步根据不同用户的不同需求发布不同的许可内容到用户的账号中,详见[发布许可流程（授权）](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/xu-ke-liu-cheng.md)
 

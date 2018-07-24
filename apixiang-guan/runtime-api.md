@@ -20,7 +20,7 @@ SDK 中的文件体现
 
 下面是一段 C 语言调用 RuntimeAPI 的示例：
 
-```
+```text
 #include "stdio.h"
 #include "ss_lm_runtime.h"
 int main(int argc, char **argv)
@@ -81,6 +81,4 @@ end:
 slm_logout(hslm);
 return sts;
 ```
-
-
 

@@ -33,15 +33,13 @@
    点击确定，立即压缩，即可生成 exe 可执行文件
 
 2. 对生成的 exe 可执行文件进行加密（此处以硬件锁为例，使用加壳工具进行加密，具体的云锁、软锁和硬件锁的授权和加密的流程请参考指引）  
-    ①打开 Virbox Protector 执行文件，将可执行 exe 文件拖进去进行保护，填写相应的许可形式和许可 ID，开发商 API 密码（在云平台开发者信息处查看），点击立即加壳
+   ①打开 Virbox Protector 执行文件，将可执行 exe 文件拖进去进行保护，填写相应的许可形式和许可 ID，开发商 API 密码（在云平台开发者信息处查看），点击立即加壳
 
-   ![](/assets/jiake002.png)
+   ![](https://github.com/virboxzhou/virbox/tree/d12a4b0aefdf309f6422c723bf65ac059fb84ea4/assets/jiake002.png)
 
    ②加壳完成后默认在同目录下生成一个和源文件名称相同的 .ssp.exe，没有锁插入或者没有授权之后的账号时的状态:
 
    ![](http://help.sense.com.cn/wp-content/uploads/2018/03/7.png)
 
    有锁插入或者登陆授权之后的用户账号 PPT 可以正常打开。
-
-
 
