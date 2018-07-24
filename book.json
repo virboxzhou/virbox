@@ -1,0 +1,22 @@
+{
+	"title" : "Virbox LM" ,
+	"language" : "zh-hans" ,
+
+
+	
+	  "plugins": [
+       "anchor-navigation-ex"
+  ],
+    "pluginsConfig": {
+        "anchor-navigation-ex": {
+            "isRewritePageTitle": true,
+            "isShowTocTitleIcon": true,
+            "tocLevel1Icon": "fa fa-hand-o-right",
+            "tocLevel2Icon": "fa fa-hand-o-right",
+            "tocLevel3Icon": "fa fa-hand-o-right"
+        }
+    },
+
+"plugins": ["expandable-chapters"]
+
+}
